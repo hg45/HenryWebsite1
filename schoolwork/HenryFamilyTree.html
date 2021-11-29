@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Henry Family Tree</title>
+		<style>
+			html {
+				background-color: #000000;
+			}
+			html, body, input, textarea, select, button {
+				color: #cccccc;
+				background-color: #000000;
+				border-color: #cccccc;
+			}
+			a {
+		    		color: #3391ff;
+			}
+				a:hover {
+				color:darkgoldenrod;
+				text-decoration: none;
+			}
+			a.hiddenlink {
+				text-decoration: none;
+				color: #cccccc;
+			}
+			#Dio {
+				position: absolute;
+				bottom: 10px;
+				left: 10px;
+			}
+		</style>
+		<script>
+			document.querySelector('html').style.backgroundColor = '#000000';
+		</script>
+	</head>
+	<body>
+		<h1>Henry's Family tree</h1>
+		<ul>
+			<li>
+				My grandparents
+				<ul>
+					<li>
+						Uncle Charlie
+						<ul>
+							<li>Eloise</li>
+							<li>Carter</li>
+						</ul>
+					</li>
+					<li>
+						Aunt Ingrid
+						<ul>
+							<li>Julia</li>
+						</ul>
+					</li>
+					<li>
+						Aunt Melissa
+					</li>
+					<li>
+						My Mom
+						<ul>
+							<li>Me</li>
+							<li>My sister</li>
+							<li>My dog, <a class='hiddenlink' href='https://youtu.be/dQw4w9WgXcQ' target='_blank'><b>Eggo</b></a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<button id='Dio'>ZA WARUDO! TOKI WO TOMARE!</button>
+	</body>
+	<script>
+		document.querySelector('button').onclick = function() {
+			if (document.querySelector('html').style.backgroundColor == "rgb(0, 0, 0)") {
+				x = true;
+			} else {
+				x = false;
+			}
+			setTimeout(() => {
+				document.querySelector('body').style.backgroundColor = "#604706";
+			}, 350);
+			setTimeout(() => {
+				document.querySelector('html').style.backgroundColor = "#604706";
+				document.querySelector('body').style.backgroundColor = "#181236";
+			}, 700);
+			setTimeout(() => {
+				document.querySelector('html').style.backgroundColor = "#181236";
+				document.querySelector('body').style.backgroundColor = "#5c0832";
+			}, 1070);
+			setTimeout(() => {
+				document.querySelector('html').style.backgroundColor = "#5c0832";
+				document.querySelector('body').style.backgroundColor = "#909415";
+			}, 1400);
+			setTimeout(() => {
+				document.querySelector('html').style.backgroundColor = "#909415";
+				if (x) {
+					document.querySelector('body').style.backgroundColor = "#16161d";
+				} else {
+					document.querySelector('body').style.backgroundColor = "#000000";
+				}
+			}, 1640);
+			setTimeout(() => {
+				if (x) {
+					document.querySelector('html').style.backgroundColor = "#16161d";
+				} else {
+					document.querySelector('html').style.backgroundColor = "#000000";
+				}
+			}, 1800);
+		}
+	</script>
+</html>

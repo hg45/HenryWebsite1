@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Henry</title>
+        <script>
+            document.designMode = 'on';
+        </script>
+        <style>
+            html {
+    background-color: #000000 !important;
+}
+html, body, input, textarea, select, button {
+    border-color: #736b5e;
+    color: #cccccc;
+    background-color: #000000;
+}
+button.mybutton {
+    width: 8vw;
+    height: 4vw;
+    font-size: 1.25em;
+}
+button > innerText {
+    margin-right: 20%;
+    margin-left: 20%;
+}
+a {
+    color: #3391ff;
+}
+table {
+    border-color: #545b5e;
+}
+::placeholder {
+    color: #b2aba1;
+}
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background-color: #555b00 !important;
+    color: #e8e6e3 !important;
+}
+::-webkit-scrollbar {
+    background-color: #202324;
+    color: #aba499;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #454a4d;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #575e62;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #484e51;
+}
+::-webkit-scrollbar-corner {
+    background-color: #181a1b;
+}
+* {
+    scrollbar-color: #202324 #454a4d;
+}
+::selection, ::-moz-selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+}
+a:hover {
+    color:darkgoldenrod;
+    text-decoration: none;
+}
+.menuitem {
+    color: #cccccc !important;
+}
+div.break {
+    clear: both;
+}
+span.float {
+    width: 12em;
+    float: left;
+    font-size: 100%;
+}
+span.ytvid {
+    padding: 0;
+    margin: 0;
+    margin-top: 12px;
+    width: 12em;
+    float: left;
+    font-size: 100%;
+    margin-right: 5.6em;
+}
+pre.pagesinfo {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+#menu {
+    background-color: #1c1c1c;
+    position: sticky;
+    -webkit-position: sticky;
+    top: 0px;
+}
+.menu {
+    float: right;
+    line-height: 250%;
+    font-weight: 549;
+    font-size: 16px;
+}
+a.hiddenlink {
+    text-decoration: none;
+    color: #cccccc;
+}
+        </style>
+    </head>
+    <body>
+        <p>
+            <b>
+                Henry Grace
+            </b>
+            <h1>fun facts</h1>
+            <h2>I know a decent amount of HTML, CSS, and JavaScript</h2>
+            <h3>Hence why this code is structured properly</h3>
+            <h4>and why it's in dark mode (light mode is pain)</h4>
+            <h5>I have coded a mediocre website (with many pages), and hosted it on GitHub, which is where the CSS I'm using comes from.</h5>
+            <h6>The reason why you can type on this page (if you've opened it in a web browser) is because of a JavaScript command I put in the head element of this HTML document. Click the word "Click" at the bottom of the page to toggle it.</h6>
+            <div style='visibility: hidden;'>
+                let's see how these tags that you told us of work 
+                <br>
+                <strong>
+                    <u>
+                        <i>
+                            These tags work.
+                        </i>
+                    </u>
+                </strong>
+                <br>
+                <em>
+                    &lt;em&gt;But so does this&lt;/em&gt;
+                </em>
+                <br>
+                &lt;/br&gt;, &lt;br&gt;, and &lt;br /&gt; all work, but IDE's don't really like the 1st, &lt;/br&gt;.
+                <center>center works, though appears it to be deprecated.</center>
+                <br>
+                <big><big><big>so does big</big></big></big> 
+                <br>
+                <small><small>but not small</small></small>
+                <br>
+                <strike>strike is also deprecated, it seems</strike>
+                <br>
+                <font color='#42c0fb'>&lt;font&gt; works, though it is—unsurprisingly—deprecated.</font>
+                <br>
+                I can tell that these things are deprecated because in my IDE, Visual Studio Code, they don't appear in the suggested text and are <font color = "red">red</font>, signifying error. Usually HTML tags are <a title="I didn't feel like getting the exact hex color so I just used my link color, it's close enough">blue</a>.
+            </div>
+            <a class='hiddenlink activator'>Click</a> <a href='https://youtu.be/dQw4w9WgXcQ' title='yes this is a rick roll' target='_blank'>me</a>
+        </p>
+        <button>
+            This is a button, it doesn't do anything.
+        </button>
+    </body>
+    <script>
+        x = 0;
+        shenanigans = document.querySelector('div');
+        document.querySelector('a.activator').onclick = function() {
+          if (document.designMode == 'off')  {
+            document.designMode = 'on';
+          } else {
+              document.designMode = 'off';
+          }
+          console.log(document.designMode)
+        }
+        document.querySelector('button').onclick = function() {
+            x++;
+            console.log('pressed', x, x % 17, shenanigans.style.visibility);
+            if(x % 17 == 0){
+                shenanigans.style.visibility = "visible"; 
+                document.querySelector('button').innerText="This is just testing how the tags that you told us to use work";
+            }else{
+                shenanigans.style.visibility = "hidden";
+                document.querySelector('button').innerText="This is a button, it doesn't do anything."
+            }
+        }
+    </script>
+</html>

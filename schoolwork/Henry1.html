@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+	<head>
+		<title>About Henry</title>
+		<link rel='stylesheet' href='../sources/css/dark.css'>
+		<style>
+			#jojo {
+				position:fixed;
+				bottom: 10px;
+				padding: 3px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1> About me, Henry!</h1>
+		<p>
+			<big>
+				My name is <strong>Henry Grace</strong>.<br>
+				<ul>
+					<li>I am in <font color = "#42c0fb">8G Math Talent</font>.</li>
+					<li>I live in <font color="goldenrod">Park Slope, Brooklyn</font>.</li>
+					<li>I have a <em>twin sister</em> who does not go to Mark Twain, a <em>single mother</em> that works in a preschool, and an adorable <em>pug</em> named <b>Eggo</b>.</li>
+					<li>I am very interested in and watch/read a lot of <u>anime</u> and <u>manga</u>. I play <u>Genshin Impact</u> very often.</li>
+					<li>I have some experience in <u>HTML</u>, <u>CSS</u>, and <u>JavaScript</u>.</li>
+				</ul>
+			</big>
+		</p>
+		<button id='jojo'>Killer Queen has already touched this webpage</button>
+	</body>
+	<script>
+		document.querySelector('#jojo').onclick = function() {
+			document.querySelector('body').innerHTML = "<img src = 'https://c.tenor.com/I3nMtz34sjMAAAAC/killer-queen-explode.gif' width = '100%'>";
+		}
+	</script>
+</html>

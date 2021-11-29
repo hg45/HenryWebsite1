@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='stylesheet' href='./sources/css/dark.css'>
+        <style>
+            h1 {
+                font-size:45px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>KILLER QUEEN HAS ALREADY TOUCHED THIS EASTER EGG</h1>
+        <img src='./sources/images/ohshc-welcome.gif' width='59%'>
+    </body>
+    <script>
+        ohshc = 0;
+        document.querySelector('img').onclick = function() {
+            ohshc++;
+            if (ohshc % 7 == 0) {
+                window.open('./ohshc.html')
+            }
+        }
+        setTimeout(() => { 
+				document.querySelector('h1').innerText='3';
+                document.querySelector('h1').style.fontSize = '60px';
+		}, 1500);
+        setTimeout(() => {
+				document.querySelector('h1').innerText='2';
+		}, 2500);
+        setTimeout(() => {
+				document.querySelector('h1').innerText='1';
+		}, 3500);
+        setTimeout(() => {
+				document.querySelector('h1').outerHTML='';
+                document.querySelector('img').outerHTML="<img src = './sources/images/killer_queen.gif' width = '100%'>";;
+		}, 4500);
+        setTimeout(() => {
+				window.close();
+		}, 6500);
+    </script>
+</html>

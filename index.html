@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome~!</title>
+        <link rel='stylesheet' href='sources/css/dark.css'>
+        <style>
+            #oldtopic {
+                color:black;
+                font-size: 1px;
+                padding: 0px;
+                margin: 0px;
+            }
+            #oldtopic:hover {
+                color:#ccc;
+                text-decoration: line-through;
+                font-size: 24px;
+            }
+            #mangaIs{
+                display: none;
+            }
+            span.whatManga {
+                display: inline;
+            }
+            a.whatManga:hover span#mangaIs {
+                display: inline;
+            }
+            a.whatManga:hover span.whatManga {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <ul class='dropbar'>
+            <li>
+                <a class='active' href='./index.html'>Main Page</a>
+            </li>
+            <li class='dropdown'>
+                <a class='dropbtn'>Manga</a>
+                <div class='dropdown-content'>
+                    <a href='./manga/whatIsManga.html' class='whatManga'><span class='whatManga'>What is manga?</span><span id='mangaIs'>Well, I'm glad you asked. Manga are essentially Japanese graphic novels. They can be short, or they can be in series with hundreds of volumes. Manga is easy to get into, as most of the time there aren't inter-connected multiverses between series leaving you with no idea where to start. You can just pick up the first volume of any series, and start reading. Unlike western comics, manga typically reads from right to left (but it's not very hard to adjust to).<br>
+                    Or, if you prefer the wikipedia definition: Manga (Japanese: 漫画 [maŋga]) are comics or graphic novels originating from Japan. Most manga conform to a style developed in Japan in the late 19th century, and the form has a long prehistory in earlier Japanese art. The term manga is used in Japan to refer to both comics and cartooning. Outside of Japan, the word is typically used to refer to comics originally published in the country.</span></a>
+                </div>
+            </li>
+            <li class='dropdown'>
+                <a class='dropbtn'>Schoolwork</a>
+                <div class='dropdown-content'>
+                    <a href='./schoolwork/about_me.html'>about_me.html</a>
+                    <a href='./schoolwork/Henry1.html'>Henry1.html</a>
+                    <a href='./schoolwork/HenryFamilyTree.html'>HenryFamilyTree.html</a>
+                    <a href='./schoolwork/HenryLinks.html'>HenryLinks.html</a>
+                    <a href='./schoolwork/HenryLists.html'>HenryLists.html</a>
+                    <a href='./schoolwork/navbar.html'>navbar.html</a>
+                    <a href='./schoolwork/randomfirsthtmldoc.html'>randomfirsthtmldoc.html</a>
+                    <a href='./schoolwork/table.html'>table.html</a>
+                    <a href='./schoolwork/website_topic.html'>website_topic.html</a>
+                    <a href='./schoolwork/html.html'>html.html</a>
+                    <a href='./schoolwork/parallax.html'>parallax.html</a>
+                    <a style='font-size: 1vh;' id='messinAround'>[& just messin around :)]</a>
+                </div>
+            </li>
+            <li class='dropdown'>
+                <a class='dropbtn'>Files</a>
+                <div class='dropdown-content'>
+                    <a href="./sources/css/dark.css">dark.css</a>
+                    <a href='./sources/images/ohshc-welcome.gif'>ohshc-welcome.gif</a>
+                    <a href='./sources/images/killer_queen.gif'>killer_queen.gif</a>
+                </div>
+            </li>
+        </ul>
+        <h1>
+            Welcome~!
+        </h1>
+        <h3 id='oldtopic'>I couldn't really think of anything, so the topic of this website will be HTML and our classwork.</h3>
+        <h3>I was uninspired by HTML, so the actual topic will be manga.</h3>
+        <img src='./sources/images/ohshc-welcome.gif' alt='Welcome~! (from Ouran High School Host Club)' title='Welcome~! (from Ouran High School Host Club)' id='ohshc' width='50%'><img src='./sources/images/index.html.png' width='50%;'>
+    </body>
+    <script>
+        ohshc = 0;
+        document.querySelector('#ohshc').onclick = function() {
+            ohshc++;
+            if (ohshc % 7 == 0) {
+                window.open('./ohshc.html');
+            }
+        }
+        document.querySelector("#messinAround").onclick = function() {
+            window.open('./ohshc.html');
+        }
+    </script>
+</html>
