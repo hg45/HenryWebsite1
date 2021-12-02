@@ -163,11 +163,11 @@ display: block;
     background-color: #c2004a;
 }
 
-span.float {
+.float {
     float: left;
     font-size: 100%;
 }
-span.float img {
+.float img {
     width: 100%;
 }
 body, html {
