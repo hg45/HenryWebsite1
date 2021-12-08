@@ -80,6 +80,18 @@ Or, if you prefer the wikipedia definition: Manga (Japanese: 漫画 [maŋga]) ar
                     <a href='./sources/images/chainsaw_man_vol5_back.jpg'>chainsaw_man_vol5_back.jpg</a>
                     <a href='./sources/images/chainsaw_man_vol7_front.jpg'>chainsaw_man_vol7_front.jpg</a>
                     <a href='./sources/images/chainsaw_man_vol7_back.jpg'>chainsaw_man_vol7_back.jpg</a>
+                    <a href='./sources/images/jjba4_vol4_back.jpg'>jjba4_vol4_back.jpg</a>
+                    <a href='./sources/images/jjba4_vol4_front.jpg'>jjba4_vol4_front.jpg</a>
+                    <a href='./sources/images/jjba4_vol5_back.jpg'>jjba4_vol5_back.jpg</a>
+                    <a href='./sources/images/jjba4_vol5_front.jpg'>jjba4_vol5_front.jpg</a>
+                    <a href='./sources/images/jojo_stone_mask.png'>jojo_stone_mask.png'</a>
+                    <a href='./sources/images/jojo_arrow_left.png'>jojo_arrow_left.png</a>
+                    <a href='./sources/images/jojo_arrow_right.pg'>jojo_arrow_right.png</a>
+                    <a href='./sources/images/jojo_gucci_1.jpg'>jojo_gucci_1.jpg</a>
+                    <a href='./sources/images/jojo_gucci_2.jpg'>jojo_gucci_2.jpg</a>
+                    <a href='./sources/images/jojo_joseph.png'>jojo_joseph.png</a>
+                    <a href="./sources/images/oh you're approaching me.png">oh you're approaching me.png</a>
+                    <a href='./sources/images/Rohan_at_the_Louvre.jfif'>Rohan_at_the_Louvre.jfif</a>
                 </div>
             </li>
         </ul>
@@ -88,7 +100,7 @@ Or, if you prefer the wikipedia definition: Manga (Japanese: 漫画 [maŋga]) ar
         </h1>
         <h3 id='oldtopic'>I couldn't really think of anything, so the topic of this website will be HTML and our classwork.</h3>
         <h3>I was uninspired by HTML, so the actual topic will be manga.</h3>
-        <img src='./sources/images/ohshc-welcome.gif' alt='Welcome~! (from Ouran High School Host Club)' title='Welcome~! (from Ouran High School Host Club)' id='ohshc' class='float' style='width:80vh;'><img src='./sources/images/index.html.png'  class='float' style='width:80vh;'>
+        <img src='./sources/images/ohshc-welcome.gif' alt='Welcome~! (from Ouran High School Host Club)' title='Welcome~! (from Ouran High School Host Club)' id='ohshc' class='float' style='width:80vh;'><img src='./sources/images/index.html.png'  class='float' id = 'code' style='width:80vh;'>
     </body>
     <script>
         ohshc = 0;
@@ -100,6 +112,9 @@ Or, if you prefer the wikipedia definition: Manga (Japanese: 漫画 [maŋga]) ar
         }
         document.querySelector("#messinAround").onclick = function() {
             window.open('./ohshc.html');
+        }
+        document.querySelector('#code').onclick = function() {
+            document.querySelector('#code').outerHTML = "<span class='float product' style='width:60vh'><img src='./sources/images/jjk_vol4_front.jpg' class='productFront'><img src='./sources/images/jjk_vol4_back.jpg' class='productBack'><br><em>Jujutsu Kaisen<span class='productBack'>, that I unfortunately didn't get around to making a page for</span></em></span>"
         }
     </script>
 </html>
