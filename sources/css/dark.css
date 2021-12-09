@@ -5,6 +5,9 @@ html, body, input, textarea, select, button {
     font-size: 2vh;
     font-family: Verdana, sans-serif;
 }
+button {
+    padding:1vh;
+}
 h1, h2, h3, h4, h5, h6 {
     font-family: sans-serif;
 }
