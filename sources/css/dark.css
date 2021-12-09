@@ -1,12 +1,9 @@
-html {
-    background-color: #000000 !important;
-    font-size: 2vh;
-    font-family: Verdana, sans-serif;
-}
 html, body, input, textarea, select, button {
     border-color: #16161d;
     color: #cccccc;
     background-color: #000000;
+    font-size: 2vh;
+    font-family: Verdana, sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: sans-serif;
